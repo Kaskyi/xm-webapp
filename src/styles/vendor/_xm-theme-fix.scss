@@ -1,0 +1,132 @@
+// selects
+.mat-option.mat-selected:not(.mat-option-multiple){
+  background-color: $primary !important;
+}
+.mat-option {
+  &:hover {
+    @include box-shadow($mat-shadow-4dp);
+    background: $primary !important;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba($primary, 0.4);
+  }
+  &:focus {
+    &:hover{
+      background-color: $primary !important;
+    }
+  }
+  &.mat-selected{
+    &:hover {
+      background-color: $primary !important;
+    }
+  }
+
+  &:first-child {
+    margin-top: 5px;
+  }
+  &:last-child {
+    margin-bottom: 5px;
+  }
+}
+.mat-option.mat-selected:not(.mat-option-multiple) {
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba($primary, 0.4);
+}
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: $primary;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: $primary;
+}
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: $primary;
+}
+
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple {
+  background-color: $danger;
+}
+.ng-invalid.mat-focused .mat-form-field-label {
+  color: $danger;
+}
+.mat-focused .mat-form-field-required-marker {
+  color: $danger;
+}
+
+// card icon, tabs
+.card .card-header-primary .card-icon,
+.card .card-header-primary:not(.card-header-icon):not(.card-header-text),
+.card .card-header-primary .card-text {
+  background: linear-gradient(60deg, $primary, lighten($primary, 5%));
+}
+
+@mixin colorize-card-icon ($color) {
+  background: linear-gradient(60deg, $color, lighten($color, 5%)) !important;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba($color, 0.4) !important;
+}
+
+.card .card-icon {
+  &[data-background-color='red'] {
+    @include colorize-card-icon(material-color('red'));
+  }
+  &[data-background-color='pink'] {
+    @include colorize-card-icon(material-color('red'));
+  }
+  &[data-background-color='purple'] {
+    @include colorize-card-icon(material-color('purple'));
+  }
+  &[data-background-color='deep-purple'] {
+    @include colorize-card-icon(material-color('deep-purple'));
+  }
+  &[data-background-color='indigo'] {
+    @include colorize-card-icon(material-color('indigo'));
+  }
+  &[data-background-color='blue'] {
+    @include colorize-card-icon(material-color('blue'));
+  }
+  &[data-background-color='light-blue'] {
+    @include colorize-card-icon(material-color('light-blue'));
+  }
+  &[data-background-color='cyan'] {
+    @include colorize-card-icon(material-color('cyan'));
+  }
+  &[data-background-color='teal'] {
+    @include colorize-card-icon(material-color('teal'));
+  }
+  &[data-background-color='green'] {
+    @include colorize-card-icon(material-color('green'));
+  }
+  &[data-background-color='light-green'] {
+    @include colorize-card-icon(material-color('light-green'));
+  }
+  &[data-background-color='lime'] {
+    @include colorize-card-icon(material-color('lime'));
+  }
+  &[data-background-color='yellow'] {
+    @include colorize-card-icon(material-color('yellow'));
+  }
+  &[data-background-color='amber'] {
+    @include colorize-card-icon(material-color('amber'));
+  }
+  &[data-background-color='orange'] {
+    @include colorize-card-icon(material-color('orange'));
+  }
+  &[data-background-color='deep-orange'] {
+    @include colorize-card-icon(material-color('deep-orange'));
+  }
+  &[data-background-color='brown'] {
+    @include colorize-card-icon(material-color('brown'));
+  }
+  &[data-background-color='grey'] {
+    @include colorize-card-icon(material-color('grey'));
+  }
+  &[data-background-color='blue-grey'] {
+    @include colorize-card-icon(material-color('blue-grey'));
+  }
+}
+
+/* Pagination */
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: $primary;
+  border-color: $primary;
+}

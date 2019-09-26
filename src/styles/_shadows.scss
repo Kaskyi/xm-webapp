@@ -1,0 +1,6 @@
+// Generate shadows
+@each $dp, $value in $mat-shadows {
+    .shadow-#{$dp}dp {
+        box-shadow: $value;
+    }
+}

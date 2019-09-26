@@ -1,0 +1,36 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "variables";
+
+// Colors
+
+$primary:       material-color(teal) !default;
+$success:       material-color(green) !default;
+$info:          material-color(cyan) !default;
+$warning:       material-color(yellow) !default;
+$danger:        material-color(red) !default;
+
+
+// Body
+
+$body-bg: #eee !default;
+
+
+// Options
+
+$enable-shadows:                              true !default;
+
+// Shadow
+
+$box-shadow-sm:            0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow:               0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-lg:            0 1rem 3rem rgba($black, .175) !default;
+
+
+// Typography
+
+$font-size-base:              14 !default; // Assumes the browser default, typically `16px`
+
+
+
+// Inputs
